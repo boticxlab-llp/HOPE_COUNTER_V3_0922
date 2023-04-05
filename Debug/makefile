@@ -61,8 +61,8 @@ all: main-build
 main-build: HOPE_COUNTER_V3_092022.elf secondary-outputs
 
 # Tool invocations
-HOPE_COUNTER_V3_092022.elf HOPE_COUNTER_V3_092022.map: $(OBJS) $(USER_OBJS) D:\hope\PRODUCTION\SW\STM32F030K6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "HOPE_COUNTER_V3_092022.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"D:\hope\PRODUCTION\SW\STM32F030K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HOPE_COUNTER_V3_092022.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+HOPE_COUNTER_V3_092022.elf HOPE_COUNTER_V3_092022.map: $(OBJS) $(USER_OBJS) C:\Users\Bheem\Desktop\New\ folder\HOPE_COUNTER_V3_0922\STM32F030K6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "HOPE_COUNTER_V3_092022.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\Bheem\Desktop\New folder\HOPE_COUNTER_V3_0922\STM32F030K6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HOPE_COUNTER_V3_092022.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
