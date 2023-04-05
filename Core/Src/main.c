@@ -276,7 +276,7 @@ int main(void)
   LCD_Set_Cursor(5, 2);
   LCD_Write_String("WAIT");
   delay_ms(7000);
-  char buffer[13];
+  char buffer[50];
 
   lcd_default();
   uint8_t flag = 0;
@@ -344,9 +344,9 @@ int main(void)
 //		//	    strcat(buffer, '\0');
 //	  HAL_UART_Transmit(&huart1,buffer,sizeof(buffer),100);// Sending in normal mode
 
-	    sprintf(buffer, "%d,%d,%d,%d=",99,98,97,96);
-	   	//	    strcat(buffer, '\0');
-	   		    HAL_UART_Transmit(&huart1,buffer,sizeof(buffer),10);// Sending in normal mode
+//	    sprintf(buffer, "%d,%d,%d,%d=",99,98,97,96);
+//	   	//	    strcat(buffer, '\0');
+//	   		    HAL_UART_Transmit(&huart1,buffer,sizeof(buffer),10);// Sending in normal mode
 //	  HAL_Delay(1000);
 	  lcd_print_data();
 
