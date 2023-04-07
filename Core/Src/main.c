@@ -340,12 +340,15 @@ int main(void)
 	  }
 
 	    HAL_Delay(10);
+//	    sprintf(buffer, "%d,%d,%d,%d=",in,out,in-out,in+out);
+//	 	//	    strcat(buffer, '\0');
+//	 		    HAL_UART_Transmit(&huart1,buffer,sizeof(buffer),10);// Sending in normal mode
 //	  sprintf(buffer, "%d-%d,",a,b);
 //		//	    strcat(buffer, '\0');
 //	  HAL_UART_Transmit(&huart1,buffer,sizeof(buffer),100);// Sending in normal mode
 
 //	    sprintf(buffer, "%d,%d,%d,%d=",99,98,97,96);
-//	   	//	    strcat(buffer, '\0');
+////	   	//	    strcat(buffer, '\0');
 //	   		    HAL_UART_Transmit(&huart1,buffer,sizeof(buffer),10);// Sending in normal mode
 //	  HAL_Delay(1000);
 	  lcd_print_data();

@@ -1492,7 +1492,7 @@ int main(void)
  8000a08:	f000 fb06 	bl	8001018 <HAL_Delay>
 
 //	    sprintf(buffer, "%d,%d,%d,%d=",99,98,97,96);
-//	   	//	    strcat(buffer, '\0');
+////	   	//	    strcat(buffer, '\0');
 //	   		    HAL_UART_Transmit(&huart1,buffer,sizeof(buffer),10);// Sending in normal mode
 //	  HAL_Delay(1000);
 	  lcd_print_data();
